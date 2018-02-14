@@ -1,12 +1,12 @@
-AC_INIT([gst-plugin-dvbmediasink],[0.10])
+AC_INIT(gst-plugin-dvbmediasink, 1.0.0, @pli4)
 
 dnl versions of gstreamer and plugins-base
 AC_ARG_WITH(gstversion,
 	AS_HELP_STRING([--with-gstversion],[use gstreamer version (major.minor)]),
-	[GST_MAJORMINOR=$withval],[GST_MAJORMINOR=0.10])
+	[GST_MAJORMINOR=$withval],[GST_MAJORMINOR=1.0])
 
-GST_REQUIRED=0.10.0
-GSTPB_REQUIRED=0.10.0
+GST_REQUIRED=1.0
+GSTPB_REQUIRED=1.0
 
 dnl fill in your package name and version here
 dnl the fourth (nano) number should be 0 for a release, 1 for CVS,
@@ -130,6 +130,13 @@ if test "$have_mpeg4" = "yes"; then
 	AC_DEFINE([HAVE_MPEG4],[1],[Define to 1 for mpeg4 support])
 fi
 
+AC_ARG_WITH(h265,
+	AS_HELP_STRING([--with-h265],[support h265, yes or no]),
+	[have_h265=$withval],[have_h265=no])
+if test "$have_h265" = "yes"; then
+	AC_DEFINE([HAVE_H265],[1],[Define to 1 for h265 support])
+fi
+
 AC_ARG_WITH(h264,
 	AS_HELP_STRING([--with-h264],[support h264, yes or no]),
 	[have_h264=$withval],[have_h264=yes])
@@ -217,6 +224,34 @@ AC_ARG_WITH(eac3,
 	[have_eac3=$withval],[have_eac3=no])
 if test "$have_eac3" = "yes"; then
 	AC_DEFINE([HAVE_EAC3],[1],[Define to 1 for E-AC3 support])
+fi
+
+AC_ARG_WITH(vb6,
+	AS_HELP_STRING([--with-vb6],[support VP6 , yes or no]),
+	[have_vb6=$withval],[have_vb6=no])
+if test "$have_vb6" = "yes"; then
+	AC_DEFINE([HAVE_VB6],[1],[Define to 1 for VB6 support])
+fi
+
+AC_ARG_WITH(vb8,
+	AS_HELP_STRING([--with-vb8],[support VP8 , yes or no]),
+	[have_vb8=$withval],[have_vb8=no])
+if test "$have_vb8" = "yes"; then
+	AC_DEFINE([HAVE_VB8],[1],[Define to 1 for VB8 support])
+fi
+
+AC_ARG_WITH(vb9,
+	AS_HELP_STRING([--with-vb9],[support VP9 , yes or no]),
+	[have_vb9=$withval],[have_vb9=no])
+if test "$have_vb9" = "yes"; then
+	AC_DEFINE([HAVE_VB9],[1],[Define to 1 for VB9 support])
+fi
+
+AC_ARG_WITH(spark,
+	AS_HELP_STRING([--with-spark],[support SPARK , yes or no]),
+	[have_spark=$withval],[have_spark=no])
+if test "$have_spark" = "yes"; then
+	AC_DEFINE([HAVE_SPARK],[1],[Define to 1 for SPARK support])
 fi
 
 AC_ARG_WITH(dtsdownmix,

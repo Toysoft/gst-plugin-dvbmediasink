@@ -1,0 +1,127 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define the version */
+#undef GST_PLUGIN_VERSION
+
+/* Define the release version */
+#undef GST_PLUGIN_VERSION_RELEASE
+
+/* Define to 1 for AMR support */
+#undef HAVE_AMR
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 for dts support */
+#undef HAVE_DTS
+
+/* Define to 1 for DTS downmix support */
+#undef HAVE_DTSDOWNMIX
+
+/* Define to 1 for E-AC3 support */
+#undef HAVE_EAC3
+
+/* Define to 1 for h263 support */
+#undef HAVE_H263
+
+/* Define to 1 for h264 support */
+#undef HAVE_H264
+
+/* Define to 1 for h265 support */
+#undef HAVE_H265
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 for limited (800x600) mpeg4v2 support */
+#undef HAVE_LIMITED_MPEG4V2
+
+/* Define to 1 for LPCM support */
+#undef HAVE_LPCM
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define to 1 for mp3 support */
+#undef HAVE_MP3
+
+/* Define to 1 for mpeg4 support */
+#undef HAVE_MPEG4
+
+/* Define to 1 for mpeg4v2 support */
+#undef HAVE_MPEG4V2
+
+/* Define to 1 for PCM support */
+#undef HAVE_PCM
+
+/* Define to 1 for SPARK support */
+#undef HAVE_SPARK
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 for VB6 support */
+#undef HAVE_VB6
+
+/* Define to 1 for VB8 support */
+#undef HAVE_VB8
+
+/* Define to 1 for VB9 support */
+#undef HAVE_VB9
+
+/* Define to 1 for wma support */
+#undef HAVE_WMA
+
+/* Define to 1 for wmv support */
+#undef HAVE_WMV
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Max PCM rate */
+#undef MAX_PCM_RATE
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
